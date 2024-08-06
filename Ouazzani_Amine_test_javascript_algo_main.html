@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <SCRIPT langage="Javascript" src="Ouazzani_Amine_test_javascript_algo_ex1.js"> </SCRIPT>
+
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="table-container"></div>
+    <div id="error-container" class="error"></div>
+    
+    <script src="Ouazzani_Amine_test_javascript_algo_ex1.js"></script>
+    <script src="Ouazzani_Amine_test_javascript_algo_ex2.js"></script>
+    <script src="Ouazzani_Amine_test_javascript_algo_ex3.js"></script>
+    <script>
+        // Exemple de tableau to_check
+        const to_check = [
+            [4, 2, 7, 3, 5, 1, 9, 8, 6],
+            [9, 8, 3, 7, 6, 2, 5, 1, 4],
+            [1, 5, 6, 8, 9, 4, 7, 2, 3],
+            [2, 3, 9, 1, 8, 5, 4, 6, 7],
+            [7, 4, 1, 7, 3, 9, 2, 5, 8], // Erreur dans cette ligne (nombre 7 dupliqué)
+            [5, 6, 8, 2, 4, 7, 1, 3, 9],
+            [8, 7, 2, 9, 1, 3, 6, 4, 5],
+            [3, 9, 5, 4, 2, 6, 8, 7, 1],
+            [6, 1, 4, 5, 7, 8, 3, 9, 2] // Ligne 5 erreur
+        ];
+
+        // Appel de la fonction validateTable
+        validateTable(to_check);
+    </script>
+</body>
+</html>
