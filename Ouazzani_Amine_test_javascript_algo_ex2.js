@@ -1,4 +1,4 @@
-function checkTable(A) {
+    function checkTable(A) {
     // Vérifie que A est un tableau et contient 9 éléments
     if (!Array.isArray(A) || A.length !== 9) {
         return false; // Retourne false si A n'est pas un tableau de 9 éléments

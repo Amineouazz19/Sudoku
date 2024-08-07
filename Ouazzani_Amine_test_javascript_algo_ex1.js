@@ -17,7 +17,7 @@ var to_verify = new Array(9);
 for (var i = 0; i < 9; i++) {
     to_verify[i] = new Array(9);
 }
-
+console.log(to_verify);
 
 //question 2: 
 
@@ -30,11 +30,11 @@ function readTable(array_number) {
     return to_verify;
 }
 
-var to_verify= readTable(array_number);
+to_verify= readTable(array_number);
 console.log(to_verify);
 
-// Fonction pour afficher le tableau "to_verify" sous forme de tableau HTML
-function displayTableAsHTML(to_verify) {
+ //Fonction pour afficher le tableau "to_verify" sous forme de tableau HTML
+ function displayTableAsHTML(to_verify) {
     var tableContainer = document.getElementById('table-container');
     var html = '<table>';
     for (var i = 0; i < to_verify.length; i++) {
@@ -52,5 +52,3 @@ function displayTableAsHTML(to_verify) {
 
 // Affichage du tableau en HTML
 displayTableAsHTML(to_verify);
-
-console.log(readTable(array_number));
